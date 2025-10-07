@@ -16,7 +16,7 @@ const rating = document.getElementById('rating');
 const director = document.getElementById('director');
 const plot = document.getElementById('plot');
 const url = 'http://www.omdbapi.com/?t=';
-const api = '&apikey=ef83680f';
+const api = 'XXXXXXX';
 
 btn.addEventListener('click', async() => {
      await callMovie();
