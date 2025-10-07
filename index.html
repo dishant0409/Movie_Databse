@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Database</title>
+</head>
+<body>
+    
+    <div class="search">
+        <input type="text" name="" id="name" placeholder="Enter movie name..." >
+        <button class="btn" id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="movie-info">
+        <div class="poster">
+            <img src="" alt="mojmoj" id="img">
+        </div>
+        <div class="info">
+           <ul>
+            <li >Title:<span id="title"></span></li>
+            <li >Director: <span id="director"></span></li>
+            <li >Year: <span id="year"></span></li>
+            <li >Released On: <span id="released"></span></li>
+            <li >Actors: <span id="actors"></span></li>
+            <li >Language: <span id="language"></span></li>
+            <li >Rating: <span id="rating"></span></li>
+            <li>Plot: <span id="plot"></span></li>
+           </ul> 
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

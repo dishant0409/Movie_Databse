@@ -1,0 +1,159 @@
+/* Fix Chrome autofill background and text color */
+#name:-webkit-autofill,
+#name:-webkit-autofill:focus,
+#name:-webkit-autofill:hover,
+#name:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    box-shadow: 0 0 0 1000px transparent inset !important;
+    background-color: transparent !important;
+    color: inherit !important;
+    transition: background-color 9999s ease-in-out 0s;
+}
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    
+    background-image: linear-gradient(to bottom, rgb(72, 20, 116) 0%,rgb(72, 20, 116) 30%,rgb(42, 131, 101) 70%,rgb(42, 131, 101) 100%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.search{
+    position: sticky;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding:2px;
+    width: 50%;
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    height: 15%;
+}
+
+.search:focus-within {
+    border: 1px solid rgb(42, 131, 101);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(42,131,101,0.08);
+}
+
+#name {
+    padding: 1px;
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: transparent;
+
+}
+
+#name:focus {
+    outline: none;
+    background-color: transparent;
+    
+}
+
+
+.btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    font-size: 3rem;
+}
+
+.btn:active {
+    transform: scale(0.90);
+}
+
+/*Poster and info*/
+
+.movie-info {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    margin: 1rem
+}
+
+.poster{
+    border: 1px solid rgb(126, 59, 139);
+    width: 30%;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+.info {
+    border: 1px solid rgb(126, 59, 139);
+    width: 70%;
+    padding: 1rem;
+    line-height:3rem;
+    letter-spacing: 0.3px;
+    font-size: 2rem;
+}
+
+#img {
+ width: 100%;
+ height: inherit;
+ object-fit:cover ;
+}
+
+
+@media(max-width: 800px){
+    body {
+        background-image: linear-gradient(to bottom, rgb(72, 20, 116) 0%,rgb(72, 20, 116) 30%,rgb(42, 131, 101) 70%,rgb(42, 131, 101) 100%);
+       height: auto;
+    }
+    .search{
+        width: 80%;
+        height: fit-content;
+        padding: auto;  
+    }
+    .search:focus {
+        border: 2px; 
+    }
+    #name{
+        color: white;
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 2rem;
+        color: white;
+    }
+    .movie-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 1.5rem;
+    }
+
+    .poster {
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        margin: 4px;
+        border: none;
+    }
+
+    .info {
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        margin: 4px;
+        border: none;
+
+    }
+    
+}
+
